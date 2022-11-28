@@ -4,17 +4,18 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
-const name = 'Gonza Dos Santos';
-export const siteTitle = 'Next.js Sample Website';
+const name = 'Gonzalo Dos Santos';
+export const siteTitle = 'Gonza Dos Santos';
 
 export default function Layout({ children, home }) {
   return (
+    <>
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Gonzalo Dos Santos Portfolio"
+          content="Gonzalo Dos Santos Blog"
         />
         <meta
           property="og:image"
@@ -65,5 +66,9 @@ export default function Layout({ children, home }) {
         </div>
       )}
     </div>
+    <section>
+    <span className={utilStyles.smallText}>Illuscrab © 2022 by Gonzalo Dos Santos Necchi is licensed under CC BY-NC-ND 4.0</span>
+  </section>
+    </>
   );
 }
