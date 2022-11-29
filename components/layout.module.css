@@ -1,16 +1,42 @@
 .container {
-    max-width: 36rem;
-    padding: 0 1rem;
-    margin: 3rem auto 6rem;
-  }
-  
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .backToHome {
-    margin: 3rem 0 0;
-  }
-  
+  max-width: 36rem;
+  padding: 0 1rem;
+  margin: 3rem auto 6rem;
+}
+
+.navbar {
+  padding: 0 1rem;
+  margin: 1rem 1rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+}
+
+.navbar_links{
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.navbar_social{
+  display: flex;
+  justify-content: space-around;
+  width: 10%;
+  margin-right: 3rem;
+  margin-left: 2rem;
+}
+
+.navbar_logo{
+  width: 10%;
+  margin-left: 1rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.backToHome {
+  margin: 3rem 0 0;
+}
