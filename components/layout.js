@@ -17,7 +17,6 @@ export default function Layout({ children, home }) {
             <Image
               priority
               src="/images/illuscrab.png"
-              className={utilStyles.borderCircle}
               height={90}
               width={90}
               alt=""
@@ -30,8 +29,8 @@ export default function Layout({ children, home }) {
           <span>Contact</span>
         </div>
         <div className={styles.navbar_social}>
-          <Image priority src="/images/github.svg" height={24} width={24} alt="" />
-          <Image priority src="/images/linkedin.svg" height={24} width={24} alt="" />
+          <Image priority src="/images/github.svg" height={24} width={24} alt="" className={styles.icon_color_filter}/>
+          <Image priority src="/images/linkedin.svg" height={24} width={24} alt="" className={styles.icon_color_filter}/>
         </div>
       </div>
       <Divider variant="middle" />
@@ -40,7 +39,7 @@ export default function Layout({ children, home }) {
           <link rel="icon" href="/favicon.ico" />
           <meta
             name="description"
-            content="Gonzalo Dos Santos Blog"
+            content="Gonzalo Dos Santos"
           />
           <meta
             property="og:image"
@@ -53,9 +52,7 @@ export default function Layout({ children, home }) {
         </Head>
         <header className={styles.header}>
           <h2 className={utilStyles.headingLg}>
-            <Link href="/" className={utilStyles.colorInherit}>
               {name}
-            </Link>
           </h2>
         </header>
         <main>{children}</main>
