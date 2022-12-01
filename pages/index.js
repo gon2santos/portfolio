@@ -5,6 +5,7 @@ import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
 import { Fragment_Mono } from '@next/font/google';
+import Carousel from '../components/carousel';
 
 const fragment = Fragment_Mono({
   subsets: ['latin'],
@@ -29,6 +30,9 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p className={fragment.className}>Full Stack Engineer.</p>
+      </section>
+      <section>
+        <Carousel/>
       </section>
       <section>
       <h2 className={utilStyles.headingL}>
