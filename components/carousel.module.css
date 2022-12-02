@@ -1,15 +1,42 @@
 .carousel{
-
+    padding: 0;
+    list-style: none;
 }
 
 .carousel_scroll_container{
-
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
 
 .carousel_media{
-
+    display: flex;
 }
 
-.carousel_item{
-
+.carousel_item {
+    height: 500px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
+
+.carousel_item:first-of-type {
+    scroll-snap-align: start;
+}
+
+.carousel_item:last-of-type {
+    scroll-snap-align: end;
+}
+
+.carousel_item > *,
+.carousel_item :is(picture, figure, img) {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel_item img {
+    object-fit: cover;
+    object-position: center;
+  }
