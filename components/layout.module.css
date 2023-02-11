@@ -55,3 +55,29 @@
 .backToHome {
     margin: 3rem 0 0;
 }
+
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 80%;
+        padding: 0 1rem;
+        margin: 3rem auto 2rem;
+    }
+
+    .navbar_links {
+        display: none;
+    }
+
+    .navbar_social {
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+        margin-right: 1rem;
+        margin-left: 2rem;
+    }
+
+    .navbar_logo {
+        width: 100px;
+        margin-left: 1rem;
+    }
+
+}

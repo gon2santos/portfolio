@@ -14,7 +14,7 @@ export default function Carousel() {
     const [intervalValue, setIntervalValue] = useState(3000);
 
     const toggleIntervalValue = () => {
-        (intervalValue == 3000) ? setIntervalValue(500000) : setIntervalValue(3000);
+        (intervalValue == 3000) ? setIntervalValue(2000) : setIntervalValue(3000);
     }
 
     useEffect(() => {
