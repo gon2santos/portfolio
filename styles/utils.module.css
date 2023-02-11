@@ -19,6 +19,7 @@
     line-height: 64px;
     margin: 1rem 0;
     color: #242020;
+    white-space: nowrap;
 }
 
 .headingL {
@@ -98,6 +99,7 @@
         line-height: 45px;
         margin: 0.3rem 0;
         color: #242020;
+        white-space: nowrap;
     }
 
     .headingL {

@@ -5,7 +5,6 @@ import utilStyles from '../styles/utils.module.css';
 import Divider from '@mui/material/Divider';
 import { Link, animateScroll as scroll } from "react-scroll";
 
-const name = 'Gonzalo Dos Santos';
 export const siteTitle = 'Gonzalo Dos Santos';
 
 export default function Layout({ children, home }) {
@@ -76,7 +75,7 @@ export default function Layout({ children, home }) {
                 </Head>
                 <header className={styles.header}>
                     <h2 className={utilStyles.headingLg}>
-                        {name}
+                        Gonzalo Dos Santos
                     </h2>
                 </header>
                 <main>{children}</main>
